@@ -25,23 +25,23 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Portfolio</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>First Paragraph</p>
-          <p>Second Para</p>
+          <p>Work I've completed for clients</p>
+          <p>Updating Soon!</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major"></h2>
           <span className="image main"><img src={hs} alt="" /></span>
-          <p>abstract artist, freelance developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
-             woman and forever a student of the world.</p>
-          <p></p>
+          <p>I am an abstract artist, freelance developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
+             woman and forever a student of the world. I build beautiful applications for businesses and individuals. </p>
+          <p>The technologies I work and build with include: React/React Native, GraphQL, Node.JS and many moreS</p>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="data-netlify="true>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
