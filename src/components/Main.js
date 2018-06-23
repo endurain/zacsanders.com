@@ -26,8 +26,8 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Portfolio</h2>
           <h4>List of work I've done for clients</h4>
-          <p>The Bindery: A site built with Wordpress</p>
-          <p>1817 Central St. Denver, CO</p>
+          <br></br>
+          <p>The Bindery, LTD: built with Wordpress</p>
           <a href="http://thebinderydenver.com/">www.thebinderydenver.com</a>
           <span className="image main"><img src={bindery} alt="" /></span>
           
@@ -46,7 +46,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="./index.js" data-netlify="true">
+          <form method="post" action="/main.js" netlify netlify-honeypot="bot-field">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
