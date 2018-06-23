@@ -36,7 +36,7 @@ class Main extends React.Component {
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major"></h2>
+          <h2 className="major">About</h2>
           <span className="image main"><img src={hs} alt="" /></span>
           <p>The technologies I work and build with include: React/React Native, GraphQL, Node.JS, MySQL and more. While I build my applications from the ground up, I have experince designing and maintaining CMS platforms like Wordpress, Drupal and Blogger. </p>
           <p>I am an abstract artist, freelance developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
@@ -46,7 +46,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#" netlify netlify-honeypot="bot-field">
+          <form name="contact" method="post" netlify netlify-honeypot="bot-field">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
