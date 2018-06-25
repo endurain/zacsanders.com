@@ -25,20 +25,18 @@ class Main extends React.Component {
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Portfolio</h2>
-          <h4>List of work I've done for clients</h4>
-          <br></br>
-          <p>The Bindery, LTD: built with Wordpress</p>
-          <a href="http://thebinderydenver.com/">www.thebinderydenver.com</a>
+          <h4>Work done for clients</h4>
+          <hr></hr>
+          <p>The Bindery: managed with Wordpress</p>
+          <a href="http://thebinderydenver.com/">thebinderydenver.com</a>
           <span className="image main"><img src={bindery} alt="" /></span>
-          
-          <p></p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={hs} alt="" /></span>
-          <p>The technologies I work and build with include: React/React Native, GraphQL, Node.JS, MySQL and more. While I build my applications from the ground up, I have experince designing and maintaining CMS platforms like Wordpress, Drupal and Blogger. </p>
+          <p>The technologies I work and build with include: React, GraphQL, Node.JS, MySQL and more. While I build my applications from the ground up, I have experince designing and maintaining CMS platforms like Wordpress, Drupal and Blogger. </p>
           <p>I am an abstract artist, freelance developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
              woman and forever a student of the world. I build beautiful applications for businesses and individuals. </p>
           {close}
@@ -49,7 +47,7 @@ class Main extends React.Component {
           <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required/>
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
@@ -57,7 +55,7 @@ class Main extends React.Component {
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="4" required></textarea>
             </div>
             <ul className="actions">
               <li><input type="submit" value="Send Message" className="special" /></li>
