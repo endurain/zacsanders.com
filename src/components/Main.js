@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 
 import hs from '../images/hs.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import bindery from '../images/bindery.jpg'
+import react from '../images/react.png'
+import GraphQL from '../images/GraphQL_Logo.png'
+import MySQL from '../images/MySQL.png'
 
 class Main extends React.Component {
   render() {
@@ -37,9 +39,12 @@ class Main extends React.Component {
           <h2 className="major">About</h2>
           <span className="image main"><img src={hs} alt="" /></span>
           <p>The technologies I work and build with include: React, GraphQL, Node.JS, MySQL and more. While I build my applications from the ground up, I have experince designing and maintaining CMS platforms like Wordpress, Drupal and Blogger. </p>
-          <p>I am an abstract artist, freelance developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
+          <p>I am an abstract artist, front-end developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
              woman and forever a student of the world. I build beautiful applications for businesses and individuals. </p>
           {close}
+        <img src={react} alt="React" />
+        <img src={GraphQL} alt="GraphQL" />
+        <img src={MySQL} alt="MySQL" />
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
