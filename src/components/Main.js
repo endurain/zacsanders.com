@@ -38,8 +38,8 @@ class Main extends React.Component {
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={hs} alt="" /></span>
-          <p>The technologies I work and build with include: React, GraphQL, Node.JS, MySQL and more. While I build my applications from the ground up, I have experince designing and maintaining CMS platforms like Wordpress, Drupal and Blogger. </p>
-          <p>I am an abstract artist, front-end developer, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
+          <p>Zac creates professional websites for businesses, organizations, and individuals. His work is built for mobile responsiveness and SEO.</p>
+          <p>Zac is a front-end developer, abstract artist, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
              woman and forever a student of the world. I build beautiful applications for businesses and individuals. </p>
           {close}
         <img src={react} alt="React" />
