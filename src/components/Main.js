@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
 import hs from '../images/hs.jpg'
 import pic02 from '../images/pic02.jpg'
 import bindery from '../images/bindery.jpg'
 import react from '../images/react.png'
 import GraphQL from '../images/GraphQL_Logo.png'
 import MySQL from '../images/MySQL.png'
+import medium from '../images/medium.png'
 
 class Main extends React.Component {
   render() {
@@ -16,38 +16,48 @@ class Main extends React.Component {
     return (
       <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Blog</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>
-             A link to my blog on medium: coming 6.28.18
-          </p>
-          {close}
+        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''}
+            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+            <h2 className="major">Blog</h2>
+            <span className="image main">
+              <a href="https://medium.com/@zacharyjsanders">
+                <img src={medium} alt="" />
+              </a>
+            </span>
+            <p>My blog on Medium</p>
+            {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Portfolio</h2>
-          <h4>Work done for clients</h4>
-          <hr></hr>
-          <p>The Bindery: managed with Wordpress</p>
-          <a href="http://thebinderydenver.com/">thebinderydenver.com</a>
-          <span className="image main"><img src={bindery} alt="" /></span>
-          {close}
+        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''}
+           ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+            <h2 className="major">Portfolio</h2>
+            <h4>Client work and projects</h4>
+            <hr></hr>
+            
+            <a href="http://thebinderydenver.com/"><p>The Bindery: managed with Wordpress</p>
+            <span className="image main"><img src={bindery} alt="" /></span></a>
+            {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
-          <span className="image main"><img src={hs} alt="" /></span>
-          <p>Zac creates professional websites for businesses, organizations, and individuals. His work is built for mobile responsiveness and SEO.</p>
-          <p>Zac is a front-end developer, abstract artist, astronomy fanatic, runner, rock climber, dog owner, partner to an incredible
-             woman and forever a student of the world. I build beautiful applications for businesses and individuals. </p>
-          {close}
-        <img src={react} alt="React" />
-        <img src={GraphQL} alt="GraphQL" />
-        <img src={MySQL} alt="MySQL" />
+        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''}
+           ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+            <h2 className="major">About</h2>
+            <span className="image main"><img src={hs} alt="" /></span>
+            <p>Zac creates professional websites for businesses, organizations, and individuals.
+             His work is built for mobile responsiveness and SEO.
+            </p>
+            <p>Zac is a front-end developer, abstract artist, astronomy fanatic, runner, rock climber,
+               dog owner, partner to an incredible
+               woman and forever a student of the world.
+            </p>
+            {close}
+                <img src={react} alt="React" />
+                <img src={GraphQL} alt="GraphQL" />
+                <img src={MySQL} alt="MySQL" />
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''}
+         ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <div className="field half first">
