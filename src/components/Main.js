@@ -7,7 +7,8 @@ import react from '../images/react.png'
 import GraphQL from '../images/GraphQL_Logo.png'
 import MySQL from '../images/MySQL.png'
 import medium from '../images/medium.png'
-
+import facial from '../images/facialapp.png'
+//this code is terrible I know. Cleaing it up soon
 class Main extends React.Component {
   render() {
 
@@ -34,6 +35,7 @@ class Main extends React.Component {
             <h4>Client work and projects</h4>
             <hr></hr>
             
+            <span className="image main"><p>Carafind, A Face Recognition App</p><img src={facial} alt="" /></span>
             <a href="http://thebinderydenver.com/"><p>The Bindery: managed with Wordpress</p>
             <span className="image main"><img src={bindery} alt="" /></span></a>
             {close}
