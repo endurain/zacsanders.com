@@ -12,20 +12,26 @@ import facial from '../images/facialapp.png'
 class Main extends React.Component {
   render() {
 
-    let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
+    let close = <div className="close" onClick={() =>
+       {this.props.onCloseArticle()}}></div>
 
     return (
-      <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div id="main" style={this.props.timeout
+      ? {display: 'flex'}
+      : {display: 'none'}}>
 
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''}
-            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="intro" className={`${this.props.article === 'intro'
+        ? 'active'
+        : ''}
+            ${this.props.articleTimeout ? 'timeout' : ''}`}
+            style={{display:'none'}}>
             <h2 className="major">Blog</h2>
             <span className="image main">
               <a href="https://medium.com/@zacharyjsanders">
                 <img src={medium} alt="" />
               </a>
             </span>
-            <p>My blog on Medium</p>
+            <p>Blog on Medium</p>
             {close}
         </article>
 
@@ -34,8 +40,9 @@ class Main extends React.Component {
             <h2 className="major">Portfolio</h2>
             <h4>Client work and projects</h4>
             <hr></hr>
-            
-            <span className="image main"><p>Carafind, A Face Recognition App</p><img src={facial} alt="" /></span>
+
+            <span className="image main"><p>Carafind, A Face Recognition App</p>
+              <img src={facial} alt="" /></span>
             <a href="http://thebinderydenver.com/"><p>The Bindery: managed with Wordpress</p>
             <span className="image main"><img src={bindery} alt="" /></span></a>
             {close}
@@ -80,10 +87,14 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="https://twitter.com/zacsanders13" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="https://www.facebook.com/zac.sanders.520" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="https://www.instagram.com/zac__sanders/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/endurain" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://twitter.com/zacsanders13"
+              className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/zac.sanders.520"
+              className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/zac__sanders/"
+              className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/endurain"
+              className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
