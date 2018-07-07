@@ -94,6 +94,7 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
+            <li>Follow me on:</li>
             <li><a href="https://twitter.com/zacsanders13"
               className="icon fa-twitter"><span className="label">Twitter</span></a></li>
             <li><a href="https://www.facebook.com/zac.sanders.520"
