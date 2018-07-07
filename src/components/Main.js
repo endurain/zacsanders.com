@@ -1,13 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import hs from '../images/hs.jpg'
-import pic02 from '../images/pic02.jpg'
-import bindery from '../images/bindery.jpg'
-import react from '../images/react.png'
-import GraphQL from '../images/GraphQL_Logo.png'
-import MySQL from '../images/MySQL.png'
-import medium from '../images/medium.png'
-import facial from '../images/facialapp.png'
+import React from 'react';
+import Link from 'gatsby-link';
+import hs from '../images/hs.jpg';
+import pic02 from '../images/pic02.jpg';
+import bindery from '../images/bindery.jpg';
+import medium from '../images/medium.png';
+import facial from '../images/facialapp.png';
 //this code is terrible I know. Cleaing it up soon
 class Main extends React.Component {
   render() {
@@ -57,19 +54,18 @@ class Main extends React.Component {
         ? 'active'
         : ''}
            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-            <h2 className="major">About</h2>
-            <span className="image main"><img src={hs} alt="" /></span>
-            <p>Zac creates professional websites for businesses, organizations,
-               and individuals.His work is built for mobile responsiveness and SEO.
-            </p>
-            <p>Zac is a front-end developer, abstract artist, astronomy fanatic, runner, rock climber,
-               dog owner, partner to an incredible
-               woman and forever a student of the world.
-            </p>
+            <h2 className="major">Services</h2>
+            <p>Web App Design and Development</p>
+            <p>Mobile App Design and Development</p>
+            <p>Server & Database Design</p>
+            <p>ZS WebSolutions is a digital studio that offers web services for
+               clients in any field. Our focus is for design with a passion for
+               innovation. We believe that creativity and efficiency are
+               the key ingredients in creating digital products for our clients.
+             </p>
+            <div className="image main"><img src={hs} alt="" /></div>
+
             {close}
-                <img src={react} alt="React" />
-                <img src={GraphQL} alt="GraphQL" />
-                <img src={MySQL} alt="MySQL" />
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''}
