@@ -35,25 +35,32 @@ class Main extends React.Component {
             {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''}
+        <article id="work" className={`${this.props.article === 'work'
+        ? 'active'
+        : ''}
            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
             <h2 className="major">Portfolio</h2>
             <h4>Client work and projects</h4>
             <hr></hr>
 
-            <span className="image main"><p>Carafind, A Face Recognition App</p>
+            <span className="image main">
+              <p>Carafind, A Face Recognition App</p>
               <img src={facial} alt="" /></span>
-            <a href="http://thebinderydenver.com/"><p>The Bindery: managed with Wordpress</p>
-            <span className="image main"><img src={bindery} alt="" /></span></a>
+            <a href="http://thebinderydenver.com/">
+              <p>The Bindery: managed with Wordpress</p>
+              <span className="image main"><img src={bindery} alt="" /></span>
+            </a>
             {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''}
+        <article id="about" className={`${this.props.article === 'about'
+        ? 'active'
+        : ''}
            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
             <h2 className="major">About</h2>
             <span className="image main"><img src={hs} alt="" /></span>
-            <p>Zac creates professional websites for businesses, organizations, and individuals.
-             His work is built for mobile responsiveness and SEO.
+            <p>Zac creates professional websites for businesses, organizations,
+               and individuals.His work is built for mobile responsiveness and SEO.
             </p>
             <p>Zac is a front-end developer, abstract artist, astronomy fanatic, runner, rock climber,
                dog owner, partner to an incredible
