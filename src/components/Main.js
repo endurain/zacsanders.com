@@ -5,6 +5,7 @@ import pic02 from '../images/pic02.jpg';
 import bindery from '../images/bindery.jpg';
 import medium from '../images/medium.png';
 import facial from '../images/facialapp.png';
+import focallocal from '../images/focallocal.png'
 //this code is terrible I know. Cleaing it up soon
 class Main extends React.Component {
   render() {
@@ -40,11 +41,16 @@ class Main extends React.Component {
             <h4>Client work and projects</h4>
             <hr></hr>
 
+
+              <a href="https://focallocal.org/">
+            <p>Focal Local: Wordpress and React</p>
+              <span className="image main"><img src={focallocal} alt="" /></span>
+            </a>
+             <p>Carafind, A Face Recognition App</p>
             <span className="image main">
-              <p>Carafind, A Face Recognition App</p>
               <img src={facial} alt="" /></span>
             <a href="http://thebinderydenver.com/">
-              <p>The Bindery: managed with Wordpress</p>
+            <p>The Bindery: managed with Wordpress</p>
               <span className="image main"><img src={bindery} alt="" /></span>
             </a>
             {close}
