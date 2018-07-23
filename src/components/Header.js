@@ -15,7 +15,7 @@ const Header = (props) => (
         </nav>
         <div className="content">
             <div className="inner">
-                <h1>ZS Web Solutions</h1>
+                <h2>ZS Web Solutions</h2>
                 <p>A Denver web development company</p>
             </div>
         </div>
