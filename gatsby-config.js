@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "zacsanders.com",
     author: "Zac Sanders",
-    description: "A site based on the Dimension theme"
+    description: "A Denver Web Development Studio"
   },
   pathPrefix: '/',
   plugins: [
