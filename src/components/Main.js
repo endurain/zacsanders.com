@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import hs from '../images/hs.jpg';
 import pic02 from '../images/pic02.jpg';
 import bindery from '../images/bindery.jpg';
 import medium from '../images/medium.png';
@@ -40,8 +39,6 @@ class Main extends React.Component {
             <h2 className="major">Portfolio</h2>
             <h4>Client work and projects</h4>
             <hr></hr>
-
-
               <a href="https://focallocal.org/">
             <p>Focal Local: Wordpress and React</p>
               <span className="image main"><img src={focallocal} alt="" /></span>
@@ -64,13 +61,11 @@ class Main extends React.Component {
             <p>Web App Design and Development</p>
             <p>Mobile App Design and Development</p>
             <p>Server & Database Design</p>
-            <p>ZS WebSolutions is a digital studio that offers web services for
+            <p>ZS Web Solutions is a digital studio that offers web services for
                clients in any field. Our focus is for design with a passion for
                innovation. We believe that creativity and efficiency are
                the key ingredients in creating digital products for our clients.
              </p>
-            <div className="image main"><img src={hs} alt="" /></div>
-
             {close}
         </article>
 

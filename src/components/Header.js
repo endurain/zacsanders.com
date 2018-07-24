@@ -1,4 +1,5 @@
 import React from 'react'
+import App from './textloop.js';
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
@@ -15,11 +16,10 @@ const Header = (props) => (
         </nav>
         <div className="content">
             <div className="inner">
-                <h2>ZS Web Solutions</h2>
-                <p>A Denver web development company</p>
+                <h2>ZSW</h2>
+                <p>A Denver web development studio</p>
             </div>
         </div>
-
     </header>
 )
 
