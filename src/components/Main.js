@@ -37,17 +37,17 @@ class Main extends React.Component {
         : ''}
            ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
             <h2 className="major">Portfolio</h2>
-            <h4>Client work and projects</h4>
+            <h4>Our Client work</h4>
             <hr></hr>
               <a href="https://focallocal.org/">
-            <p>Focal Local: Wordpress and React</p>
+            <p>Focal Local: Local Action for Global Change</p>
               <span className="image main"><img src={focallocal} alt="" /></span>
             </a>
-             <p>Carafind, A Face Recognition App</p>
+             <p>Carafind: A Face Recognition App</p>
             <span className="image main">
               <img src={facial} alt="" /></span>
             <a href="http://thebinderydenver.com/">
-            <p>The Bindery: managed with Wordpress</p>
+            <p>The Bindery: A market, bakery & eatery in Denver, CO</p>
               <span className="image main"><img src={bindery} alt="" /></span>
             </a>
             {close}
