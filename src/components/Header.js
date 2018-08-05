@@ -1,5 +1,5 @@
 import React from 'react'
-import App from './textloop.js';
+import textLoop from './textloop.js';
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
@@ -19,6 +19,7 @@ const Header = (props) => (
                 <h2>ZSW</h2>
                 <p>A Denver web development studio</p>
             </div>
+            <div className='particles' params={ textLoop }/>
         </div>
     </header>
 )

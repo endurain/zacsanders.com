@@ -5,6 +5,7 @@ import bindery from '../images/bindery.jpg';
 import medium from '../images/medium.png';
 import facial from '../images/facialapp.png';
 import focallocal from '../images/focallocal.png'
+import starwood from '../images/starwood.png';
 //this code is terrible I know. Cleaing it up soon
 class Main extends React.Component {
   render() {
@@ -39,6 +40,10 @@ class Main extends React.Component {
             <h2 className="major">Portfolio</h2>
             <h4>Our Client work</h4>
             <hr></hr>
+            <a href="https://www.starwoodrenovation.com/">
+          <p>Starwood Renovation: Design-Build Contractor & Residential Construction</p>
+            <span className="image main"><img src={starwood} alt="" /></span>
+          </a>
               <a href="https://focallocal.org/">
             <p>Focal Local: Local Action for Global Change</p>
               <span className="image main"><img src={focallocal} alt="" /></span>
