@@ -16,8 +16,8 @@ const Header = (props) => (
         </nav>
         <div className="content">
             <div className="inner">
-                <h2>ZSW</h2>
-                <p>A Denver web development studio</p>
+                <h2></h2>
+                <p>A Full Stack Developer</p>
             </div>
             <div className='particles' params={ textLoop }/>
         </div>
